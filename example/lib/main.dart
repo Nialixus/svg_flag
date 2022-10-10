@@ -21,25 +21,22 @@ class MyApp extends StatelessWidget {
             itemCount: FlagData.values.length,
             shrinkWrap: true,
             itemBuilder: (_, index) => Center(
-                  child: Column(
-                    children: [
-                      Container(
-                          decoration: BoxDecoration(boxShadow: [
-                            BoxShadow(
-                                offset: const Offset(1, 1),
-                                blurRadius: 1,
-                                color: Colors.black.withOpacity(0.25))
-                          ]),
-                          alignment: Alignment.center,
-                          width: 30,
-                          height: 20,
-                          margin: const EdgeInsets.fromLTRB(20, 20, 20, 5.0),
-                          child: Flags(FlagData.values[index])),
-                      Text('${index + 1}. ${FlagData.values[index].source}'
-                          .replaceAll(RegExp(r'packages.*/|.svg|\-'), "")
-                          .toUpperCase())
-                    ],
-                  ),
-                )));
+                    child: Column(children: [
+                  Container(
+                      decoration: BoxDecoration(boxShadow: [
+                        BoxShadow(
+                            offset: const Offset(1, 1),
+                            blurRadius: 1,
+                            color: Colors.black.withOpacity(0.25))
+                      ]),
+                      alignment: Alignment.center,
+                      width: 30,
+                      height: 20,
+                      margin: const EdgeInsets.fromLTRB(20, 20, 20, 5.0),
+                      child: Flags(FlagData.values[index])),
+                  Text('${index + 1}. ${FlagData.values[index].source}'
+                      .replaceAll(RegExp(r'packages.*/|.svg'), "")
+                      .toUpperCase())
+                ]))));
   }
 }

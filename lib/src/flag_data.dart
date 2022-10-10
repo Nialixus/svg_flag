@@ -22,6 +22,10 @@ class FlagData extends StatelessWidget {
   static FlagData parse({required String code}) =>
       FlagData('packages/flags/assets/${code.toLowerCase()}.svg');
 
+  /// Flag of Ascension Island ![](https://raw.githubusercontent.com/Nialixus/flags/main/assets/ac.svg)
+  /// ```dart
+  /// FlagData.ac = FlagData.parse(code: "AC").
+  /// ```
   static const FlagData ac = FlagData('packages/flags/assets/ac.svg');
   static const FlagData ad = FlagData('packages/flags/assets/ad.svg');
   static const FlagData ae = FlagData('packages/flags/assets/ae.svg');
@@ -85,7 +89,6 @@ class FlagData extends StatelessWidget {
   static const FlagData cz = FlagData('packages/flags/assets/cz.svg');
 
   static const FlagData de = FlagData('packages/flags/assets/de.svg');
-  static const FlagData dg = FlagData('packages/flags/assets/dg.svg');
   static const FlagData dj = FlagData('packages/flags/assets/dj.svg');
   static const FlagData dk = FlagData('packages/flags/assets/dk.svg');
   static const FlagData dm = FlagData('packages/flags/assets/dm.svg');
@@ -109,6 +112,7 @@ class FlagData extends StatelessWidget {
   static const FlagData fk = FlagData('packages/flags/assets/fk.svg');
   static const FlagData fm = FlagData('packages/flags/assets/fm.svg');
   static const FlagData fp = FlagData('packages/flags/assets/fp.svg');
+  static const FlagData fo = FlagData('packages/flags/assets/fo.svg');
   static const FlagData fr = FlagData('packages/flags/assets/fr.svg');
 
   static const FlagData ga = FlagData('packages/flags/assets/ga.svg');
@@ -300,7 +304,6 @@ class FlagData extends StatelessWidget {
   static const FlagData ws = FlagData('packages/flags/assets/ws.svg');
 
   static const FlagData xk = FlagData('packages/flags/assets/xk.svg');
-  static const FlagData xx = FlagData('packages/flags/assets/xx.svg');
 
   static const FlagData ye = FlagData('packages/flags/assets/ye.svg');
   static const FlagData yt = FlagData('packages/flags/assets/yt.svg');
@@ -370,7 +373,6 @@ class FlagData extends StatelessWidget {
     cy,
     cz,
     de,
-    dg,
     dj,
     dk,
     dm,
@@ -391,6 +393,7 @@ class FlagData extends StatelessWidget {
     fj,
     fk,
     fm,
+    fo,
     fp,
     fr,
     ga,
@@ -553,7 +556,6 @@ class FlagData extends StatelessWidget {
     wf,
     ws,
     xk,
-    xx,
     ye,
     yt,
     za,
