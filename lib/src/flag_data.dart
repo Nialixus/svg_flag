@@ -1,23 +1,8 @@
 part of 'package:flags/flags.dart';
 
-class FlagData extends StatelessWidget {
-  const FlagData(this.source,
-      {Key? key,
-      this.width = 20.0,
-      this.height = 20.0,
-      this.fit = BoxFit.cover,
-      this.alignment = Alignment.center})
-      : super(key: key);
+class FlagData {
+  const FlagData(this.source);
   final String source;
-  final double width, height;
-  final BoxFit fit;
-  final AlignmentGeometry alignment;
-
-  @override
-  Widget build(BuildContext context) {
-    return SvgPicture.asset(source,
-        width: width, height: height, fit: fit, alignment: alignment);
-  }
 
   static FlagData parse({required String code}) =>
       FlagData('packages/flags/assets/${code.toLowerCase()}.svg');
