@@ -1,4 +1,4 @@
-import 'package:flags/flags.dart';
+import 'package:svg_flag/svg_flag.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,11 +29,9 @@ class MyApp extends StatelessWidget {
                             blurRadius: 1,
                             color: Colors.black.withOpacity(0.25))
                       ]),
-                      alignment: Alignment.center,
-                      width: 30,
-                      height: 20,
                       margin: const EdgeInsets.fromLTRB(20, 20, 20, 5.0),
-                      child: Flags(FlagData.values[index])),
+                      child: SvgFlag(FlagData.values[index],
+                          width: 30, height: 15)),
                   Text('${index + 1}. ${FlagData.values[index].source}'
                       .replaceAll(RegExp(r'packages.*/|.svg'), "")
                       .toUpperCase())

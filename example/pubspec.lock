@@ -57,13 +57,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.0"
-  flags:
-    dependency: "direct main"
-    description:
-      path: ".."
-      relative: true
-    source: path
-    version: "1.0.0"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -176,6 +169,13 @@ packages:
       name: string_scanner
       url: "https://pub.dartlang.org"
     source: hosted
+    version: "1.1.0"
+  svg_flag:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
     version: "1.1.0"
   term_glyph:
     dependency: transitive

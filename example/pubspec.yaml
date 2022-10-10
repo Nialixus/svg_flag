@@ -29,7 +29,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flags:
+  svg_flag:
     path: ../
 
 
