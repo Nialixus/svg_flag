@@ -1,17 +1,49 @@
 part of 'package:svg_flag/svg_flag.dart';
 
+/// [FlagData] is used as a container of asset source.
 class FlagData {
+  /// [FlagData] contains an asset source to be used in [SvgFlag].
+  ///
+  /// ```dart
+  /// // Putting manually asset source.
+  /// FlagData data = FlagData("packages/svg_flag/assets/id.svg");
+  ///
+  /// // Calling an existed [FlagData].
+  /// FlagData data = FlagData.id;
+  ///
+  /// // Parsing [String] and validate wether [FlagData] contains this code or not.
+  /// FlagData data = FlagData.parse(code: "ID");
+  ///
+  /// // List of existed [FlagData].
+  /// List<FlagData> datas = FlagData.values;
+  /// ```
   const FlagData(this.source);
+
+  /// Asset source to be wrapped in [FlagData].
   final String source;
 
+  /// Parsing [FlagData] from [String].
+  ///
+  /// ```dart
+  /// FlagData data = FlagData.parse(code: "ID");
+  /// ```
   static FlagData parse({required String code}) =>
       FlagData('packages/svg_flag/assets/${code.toLowerCase()}.svg');
 
-  /// Flag of Ascension Island ![](https://raw.githubusercontent.com/Nialixus/flags/main/assets/ac.svg)
+  /// <img src="https://raw.githubusercontent.com/Nialixus/flags/main/assets/ac.svg" width="45" height="30"/>
+  ///
+  /// Flag of Ascension Island.
   /// ```dart
   /// FlagData.ac = FlagData.parse(code: "AC").
   /// ```
   static const FlagData ac = FlagData('packages/svg_flag/assets/ac.svg');
+
+  /// <img src="https://raw.githubusercontent.com/Nialixus/flags/main/assets/ad.svg" width="45" height="30"/>
+  ///
+  /// Flag of Andorra.
+  /// ```dart
+  /// FlagData.ad = FlagData.parse(code: "AD").
+  /// ```
   static const FlagData ad = FlagData('packages/svg_flag/assets/ad.svg');
   static const FlagData ae = FlagData('packages/svg_flag/assets/ae.svg');
   static const FlagData af = FlagData('packages/svg_flag/assets/af.svg');
@@ -297,6 +329,7 @@ class FlagData {
   static const FlagData zm = FlagData('packages/svg_flag/assets/zm.svg');
   static const FlagData zw = FlagData('packages/svg_flag/assets/zw.svg');
 
+  /// List of all existed flag in this package.
   static const List<FlagData> values = [
     ac,
     ad,

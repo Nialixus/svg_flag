@@ -1,3 +1,4 @@
+/// Library of [SvgFlag] and [FlagData].
 library svg_flag;
 
 import 'package:flutter/material.dart';
@@ -7,21 +8,15 @@ import 'package:flutter_svg/flutter_svg.dart';
 part 'package:svg_flag/src/flag_data.dart';
 
 /// An error-free flutter package contains SVG Flag of Countries around the world.
-///
-/// ```dart
-/// SvgFlag(FlagData.id);
-/// ```
-/// or
-/// ```dart
-/// SvgFlag(FlagData.parse(code: "ID"))
-/// ```
 class SvgFlag extends StatefulWidget {
+  /// Display a vector flag of countries around the world.
+  ///
   /// ```dart
+  /// // Displaying a flag with an existed flag code.
   /// SvgFlag(FlagData.id);
-  /// ```
-  /// or
-  /// ```dart
-  /// SvgFlag(FlagData.parse(code: "ID"))
+  ///
+  /// // Displaying a flag by parsing code from String.
+  /// SvgFlag(FlagData.parse(code: "ID"));
   /// ```
   const SvgFlag(this.data,
       {Key? key,
@@ -30,10 +25,20 @@ class SvgFlag extends StatefulWidget {
       this.fit = BoxFit.cover,
       this.alignment = Alignment.center})
       : super(key: key);
+
+  /// Flag's width, by default is 15.0.
   final double width;
+
+  /// Flag's height, by default is 10.0.
   final double height;
+
+  /// Flag's width, by default is 15.0.
   final FlagData data;
+
+  /// By default [fit] is [BoxFit.cover].
   final BoxFit fit;
+
+  /// By default aligning flag to center.
   final AlignmentGeometry alignment;
 
   @override
@@ -41,12 +46,14 @@ class SvgFlag extends StatefulWidget {
 }
 
 class _SvgFlagState extends State<SvgFlag> {
+  /// Base String of asset by default is an empty string.
   String valid = '';
 
+  /// An asynchronous function to validate asset source.
   Future<void> validator() async {
     try {
       String valid = await rootBundle.loadString(widget.data.source);
-      setState(() => this.valid = valid);
+      if (valid.isNotEmpty) setState(() => this.valid = valid);
     } catch (e) {
       /* do nothing */
     }
