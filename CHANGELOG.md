@@ -9,3 +9,7 @@
 ## 1.2.0
 
 - Update Validator
+
+## 1.3.0
+
+- Update Documentation
