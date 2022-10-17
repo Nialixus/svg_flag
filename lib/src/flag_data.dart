@@ -910,14 +910,6 @@ class FlagData {
   /// ```
   static const FlagData ind = FlagData('packages/svg_flag/assets/in.svg');
 
-  /// <img src="https://raw.githubusercontent.com/Nialixus/flags/main/assets/io.svg" width="45" height="30"/>
-  ///
-  /// Flag of British Indian Ocean Territory.
-  /// ```dart
-  /// FlagData.io = FlagData.parse(code: "IO").
-  /// ```
-  static const FlagData io = FlagData('packages/svg_flag/assets/io.svg');
-
   /// <img src="https://raw.githubusercontent.com/Nialixus/flags/main/assets/iq.svg" width="45" height="30"/>
   ///
   /// Flag of Iraq.
@@ -2160,6 +2152,16 @@ class FlagData {
     hr,
     ht,
     hu,
+    ic,
+    id,
+    ie,
+    il,
+    im,
+    ind,
+    iq,
+    ir,
+    isl,
+    it,
     je,
     jm,
     jo,

@@ -13,3 +13,7 @@
 ## 1.3.0
 
 - Update Documentation
+
+## 1.4.0
+
+- Remove IO flag
