@@ -3,9 +3,9 @@
 <a href='https://pub.dev/packages/svg_flag'><img src='https://img.shields.io/pub/v/svg_flag.svg?logo=flutter&color=blue&style=flat-square'/></a></br>
 An error-free flutter package contains SVG Flags of Countries around the world.
 
-## Previes
+## Preview
 
-https://user-images.githubusercontent.com/45191605/195325632-f9d4b023-ff23-4868-8a88-d5884d81e7a9.mp4
+![Screenrecorder-2022-10-12-14-49-17-88](https://user-images.githubusercontent.com/45191605/196086298-afef0dee-9370-4f90-a43c-511890577728.gif)
 
 ## Install
 
