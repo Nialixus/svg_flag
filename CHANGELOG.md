@@ -17,3 +17,7 @@
 ## 1.4.0
 
 - Remove IO flag
+
+## 1.5.0
+
+- Update flutter_svg
