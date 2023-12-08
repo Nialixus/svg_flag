@@ -17,7 +17,7 @@ Add this line to your pubspec.yaml.
 
 ```yaml
 dependencies:
-  svg_flag: ^1.5.0
+  svg_flag: ^1.5.1
 ```
 
 ## Usage

@@ -21,3 +21,7 @@
 ## 1.5.0
 
 - Update flutter_svg
+
+## 1.5.1
+
+- Update documentation

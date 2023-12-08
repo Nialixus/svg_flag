@@ -7,7 +7,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 part 'package:svg_flag/src/flag_data.dart';
 
-/// An error-free flutter package contains SVG Flag of Countries around the world.
+/// A curated collection of all country flags in SVG format for easier integration.
 class SvgFlag extends StatefulWidget {
   /// Display a vector flag of countries around the world.
   ///
